@@ -1,0 +1,41 @@
+<div id="TempHistogramView">
+    <h1>Hot Days Per Month In Phoenix Last Year (2018)</h1>
+
+    <p>
+        We saw from the last chart that there were a considerable amount of days where the daily
+        high temperature was 100&deg;F (38&deg;C) or higher.
+    </p>
+    <p>
+        In most places across the US, we would consider the "hot" months to be those which fall in
+        the summer months (from roughly June to September). But we've already seen that in Phoenix,
+        100&deg;F temperatures exist for six months of the year. Let's explore this  more.
+    </p>
+    <p>
+        Use the slider to control the cutoff temperature. The chart below will update to show the percentage of days
+        per month and per year where the high temperature was equal or above the cutoff temperature.
+    </p>
+    <div id="controls">
+        <input id="tempSlider" type="range" name="points" min="30" max="130">
+        <span id="cutoffValue"></span><span>&deg;</span>
+        <select id="unitSelect">
+            <option value="f">Fahrenheit</option>
+            <option value="c">Celsius</option>
+        </select>
+    </div>
+    <div id="chart">
+
+    </div>
+
+    <p>
+        We can see that over 35% of the days (roughly 128) - spread over six months - last year reached a temperature of 100&deg;F (38&deg;C) or hotter.
+        Almost 50% of he days - spread over eight months - last year reached a temperature of 90&deg;F (32&deg;C) or hotter. Furthermore,
+        we see that Phoenix experienced temperatures of 110&deg;F (43&deg;C) or more spread over three months.
+    </p>
+    <p>
+        So far it appears the Phoenix is living up to its reputation as a hot city. In the first chart we saw a summary of
+        daily temperatures for last year. In this chart we saw how hot days were distributed across each month last year.
+        As a final step, let's take a look at at the temperatures throughout a given day.
+    </p>
+    <a href="#daily" class="next">PREVIOUS</a>
+    <a href="#hourly" class="next">NEXT</a>
+</div>

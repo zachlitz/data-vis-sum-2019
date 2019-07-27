@@ -1,0 +1,76 @@
+<div id="HourlyView">
+    <h1>Hourly Temperature Data In Phoenix Last Year (2018</h1>
+    <p>
+        At this point we have a good idea of what the temperatures looked like in Phoenix for 2018.
+        We've seen there are plenty of days (35%) where the temperature was above 100&deg;F (38&deg;C)
+        and even more (almost 50%) days where the temperature was 90&deg;F (32&deg;C) or hotter.
+    </p>
+    <p>
+        But the daily high temperature does not tell us the whole story.
+        For instance, if Phoenix stays moderately cool until late in the morning or afternoon before
+        reaching the high temperature, and/or cools down early in the evening, then it might not feel
+        like Phoenix is really as hot as it initially appears.
+    </p>
+    <p>
+        In order to investigate this further, we will look at a final visualization. This visualization will show each day
+        in a selected month as a heat map of the temperatures throughout the day where the intensity of the value is relative to the
+        day's high temperature. We can also select a single day slice from the heat map to see a scatter plot of the daily
+        relative temperature as a function of the time.
+    </p>
+    <br>
+    <p>
+        Use the controls below to set the month and day (you can also click the heat map to select a day) you want to see hourly
+        temperature data for. The temperatures are displayed relative to the highest and lowest temperatures for <em>that</em>
+        particular day (the red color represents the high for the respective day, and blue represents the low for the respective day).
+    </p>
+    <p>
+        For the two-dimensional heat map, the hours run horizontally and the days (of the month) run vertically. The scatter plot and
+        the heat map share a horizontal (time) axis from 12:00 AM to 11:00 PM, and the colors representing the daily relative temperatures
+        are identical.
+    </p>
+
+    <div id="controls">
+        <select id="monthSelect">
+            <option value="1">01 - January</option>
+            <option value="2">02 - February</option>
+            <option value="3">03 - March</option>
+            <option value="4">04 - April</option>
+            <option value="5">05 - May</option>
+            <option value="6">06 - June</option>
+            <option value="7">07 - July</option>
+            <option value="8">08 - August</option>
+            <option value="9">09 - September</option>
+            <option value="10">10 - October</option>
+            <option value="11">11 - November</option>
+            <option value="12">12 - December</option>
+        </select>
+        <input type="number" id="dayInput" step="1" placeholder="Day">
+    </div>
+    <div id="lineChart"></div>
+    <div id="heatChart"></div>
+
+    <p>
+        These two visualization show us that hot days are hot from early in the morning to late into the evening.
+        We can see that in July (usually the hottest month) the temperature typically begins to rise substantially starting
+        around 8-9 AM and can reach near high temperatures by 10-11 AM. These high temperatures can stay until 8-9 PM and not
+        really cool too much until after 10-11 PM (still being 100&deg;F (38&deg;C) or over at this time), meaning that a summer day
+        can easily be over 100&deg;F (38&deg;C) for 12-14 hours in the day.
+    </p>
+
+    <p>
+        We have seen three visualizations for Phoenix temperatures. We have seen a chart of daily temperatures throughout last year (2018),
+        a chart that show the proportion of hot days per month and over the year, and a heat map showing hourly temperatures throughout the day.
+    </p>
+    <h3>Summary</h3>
+    <p>
+        These visualization have show three things:
+        <ol>
+            <li>Temperatures are high through the year</li>
+            <li>35% of days last year had temperatures above 100&deg;F (38&deg;C) and almost 50% temperatures above 90&deg;F (32&deg;C)</li>
+            <li>It's not uncommon for a summer day to be at least 100&deg;F (38&deg;C) for more than 12 hours</li>
+        </ol>
+        Phoenix seems to have a well deserved reputation as the "City Of The Sun" and is without a doubt a <em>hot</em> place to be.
+    </p>
+
+    <a href="#hot-days" class="next">PREVIOUS</a>
+</div>
